@@ -1,0 +1,28 @@
+managed implementation in class zbp_i_stud_mut unique;
+strict ( 2 );
+
+define behavior for zi_stud_mut //alias <alias_name>
+persistent table zstud_mut
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field (  numbering : managed,readonly ) Id;
+mapping for zstud_mut
+{
+Id = id;
+Firstname = firstname;
+Lastname  = lastname;
+Age = age;
+Course  = course;
+Courseduration = courseduration;
+Status = status;
+Gender = gender;
+Dob = dob;
+Lastchangedat = lastchangedat;
+Locallastchangedat = locallastchangedat;
+}
+}

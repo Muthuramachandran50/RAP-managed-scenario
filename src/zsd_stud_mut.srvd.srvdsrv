@@ -1,0 +1,4 @@
+@EndUserText.label: 'service definition for student'
+define service Zsd_stud_mut {
+  expose zc_stud_mut;
+}
